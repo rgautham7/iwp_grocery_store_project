@@ -1,9 +1,8 @@
-/*default styles*/
+
 *{
 	margin: 0;
 	padding: 0;
 }
-/*style for navigation*/
 nav{
 	height: 60px;
 	width: 100%;
@@ -28,7 +27,6 @@ nav ul li a{
 body{
 	font-family: 'PT Sans', sans-serif
 }
-/*logo*/
 .logo{
 	height: 80px;
     float: left;
@@ -46,7 +44,6 @@ body{
 	color: White;
 }
 
-/*/*introduction section*/
 .introduction{
 	height: 600px;
 	width: 100%;
@@ -63,7 +60,6 @@ body{
     padding-top: 250px;
     text-align:center;*/
 }
-/*footer section*/
 .footer{
 	height: 50px
 	width: 100%;

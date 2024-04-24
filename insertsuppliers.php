@@ -43,7 +43,7 @@ if (isset($_POST['grocery2'])) {
             width: 400px;
             margin: 50px auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            background-color: rgba(255, 255, 255, 0.8); 
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }

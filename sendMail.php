@@ -5,20 +5,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // Configure SMTP settings
     $smtpHost = 'smtp.gmail.com';
     $smtpPort = 587;
-    $smtpUsername = 'your_email@gmail.com'; // Your Gmail address
-    $smtpPassword = 'your_password'; // Your Gmail password
+    $smtpUsername = 'your_email@gmail.com';
+    $smtpPassword = 'your_password'; 
 
-    // Compose the email
     $to = "contact@gmail.com";
     $subject = "Message from $name";
     $body = "Name: $name\n";
     $body .= "Email: $email\n";
     $body .= "Message:\n$message";
 
-    // Send the email using PHPMailer library (you need to download and include PHPMailer)
     require 'path/to/PHPMailer/src/PHPMailer.php';
     require 'path/to/PHPMailer/src/SMTP.php';
 
@@ -40,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Failed to send email. Please try again later.";
     }
 } else {
-    // Handle if the form is accessed directly without POST request
     echo "Access denied!";
 }
 ?>

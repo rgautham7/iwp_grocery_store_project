@@ -23,7 +23,7 @@ include("db.php");
             height: 100%;
             object-fit: cover;
             z-index: -1;
-            opacity: 1; /* Set opacity to 1 to remove the overlay */
+            opacity: 1;
         }
         .button {
             background-color: #10B981;
@@ -48,7 +48,7 @@ include("db.php");
             margin-bottom: 1.5rem;
             background: linear-gradient(to right, #FFA732 0%, #D20062 50%, #A7D129 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; /* Safari */
+            -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
         }

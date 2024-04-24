@@ -13,19 +13,18 @@ include("db.php");
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 		<style>
-			/* Style for the logout button */
 			.logout-btn {
-				background-color: #dc2626; /* Red color */
-				color: #fff; /* White text color */
-				border-radius: 0.375rem; /* Rounded corners */
-				padding: 0.75rem 1.5rem; /* Padding */
-				transition: transform 0.3s, box-shadow 0.3s; /* Transition effect for hover */
+				background-color: #dc2626; 
+				color: #fff; 
+				border-radius: 0.375rem;
+				padding: 0.75rem 1.5rem; 
+				transition: transform 0.3s, box-shadow 0.3s;
 			}
 
 			.logout-btn:hover {
-				background-color: #c53030; /* Darker red color on hover */
-				transform: scale(1.05); /* Scale effect on hover */
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+				background-color: #c53030; 
+				transform: scale(1.05); 
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 			}
 
 			.overlay-text h2{
@@ -33,30 +32,29 @@ include("db.php");
 				font-family: 'Righteous', 'sans-serif';
 				background: linear-gradient(to right, #E3651D 0%, #A0153E 50%, #FF204E 100%);
 				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent; /* Safari */
+				-webkit-text-fill-color: transparent;
 				background-clip: text;
 				text-fill-color: transparent;
 			}
 			
-			/* Style for the chatbot button */
 			.chatbot-btn {
 				position: fixed;
 				bottom: 75px;
 				right: 20px;
-				background-color: #007bff; /* Blue color */
-				color: #fff; /* White text color */
+				background-color: #007bff; 
+				color: #fff; 
 				border: none;
 				border-radius: 50%;
 				padding: 15px;
 				font-size: 16px;
 				cursor: pointer;
-				z-index: 999; /* Ensure it's above other elements */
+				z-index: 999; 
 				transition: background-color 0.3s;
 				font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			}
 
 			.chatbot-btn:hover {
-				background-color: #0056b3; /* Darker blue color on hover */
+				background-color: #0056b3; 
 			}
 
 		</style>

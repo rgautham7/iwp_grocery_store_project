@@ -42,7 +42,7 @@ if (isset($_POST['grocery2'])) {
             width: 400px;
             margin: 50px auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            background-color: rgba(255, 255, 255, 0.7); 
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
@@ -59,7 +59,7 @@ if (isset($_POST['grocery2'])) {
         }
 
         form input[type="text"] {
-            width: calc(100% - 22px); /* Adjusted width to account for padding */
+            width: calc(100% - 22px); 
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 3px;

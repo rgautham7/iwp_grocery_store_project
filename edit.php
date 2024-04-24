@@ -1,34 +1,26 @@
 <?php
-// Include database connection
 include("db.php");
 
-// Retrieve customer ID from GET parameter
 $getcustomer_id = $_GET['edit'];
 
-// Fetch customer details from the database
 $seledittwo = "SELECT * FROM `customer` WHERE `customer_id` = '$getcustomer_id'";
 $qry = mysqli_query($db, $seledittwo);
 $selassoc = mysqli_fetch_assoc($qry);
 
-// Extract customer details
 $customer_id = $selassoc['customer_id'];
 $Name = $selassoc['Name'];
 $phoneNo = $selassoc['phoneNo'];
 $address = $selassoc['address'];
 
-// Update customer details if form is submitted
 if (isset($_POST['updateedit'])) {
-    // Retrieve updated values from POST
     $customer_id = $_POST['customer_id'];
     $Name = $_POST['Name'];
     $phoneNo = $_POST['phoneNo'];
     $address = $_POST['address'];
 
-    // Update customer details in the database
     $seleditt = "UPDATE `customer` SET `Name`='$Name', `phoneNo`='$phoneNo', `address`='$address' WHERE `customer_id` = '$customer_id'";
     $qry = mysqli_query($db, $seleditt);
 
-    // Redirect to display page after update
     if ($qry) {
         header("location: display.php");
     }

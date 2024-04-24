@@ -1,12 +1,8 @@
 <?php 
 include("db.php");
 
-// Assuming the user's credentials are checked and stored in session
-// For demonstration purposes, let's assume $userType holds the user type ('admin' or 'user')
+$userType = '';
 
-$userType = ''; // Placeholder for user type, to be determined based on login credentials
-
-// Check if the user is logged in and determine the user type
 if(isset($_SESSION['user_type'])) {
     $userType = $_SESSION['user_type'];
 }
@@ -24,7 +20,6 @@ if(isset($_SESSION['user_type'])) {
    </head>
    <body>
 	
-   	<!-- introduction -->
     <nav>
         <ul>
             <?php if($userType === 'admin'): ?>
@@ -37,7 +32,6 @@ if(isset($_SESSION['user_type'])) {
             <li><span class="centered-link"><a href="insertsuppliers.php">Insert Suppliers</a></span></li>
             <li><span class="centered-link"><a href="displaysuppliers.php">Update Suppliers</a></span></li>
             <?php else: ?>
-            <!-- Define links for users -->
             <li><a href="insertorders.php">Insert Orders</a></li>
             <li><a href="displayorders.php">View Orders</a></li>
             <li><a href="insertproduct.php">Insert Products</a></li>
@@ -55,7 +49,6 @@ if(isset($_SESSION['user_type'])) {
 			<h2>Welcome To Fresh Harbor</h2>
 		</div>
    	</div>
-   	<!-- footer -->
    	<footer class="footer">
 		<p>&copy; Fresh Harbor 2024. All rights reserved.</p>
    	</footer>

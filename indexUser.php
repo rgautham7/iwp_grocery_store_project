@@ -14,44 +14,43 @@ include("db.php");
    	<link rel="stylesheet" href="user_css/style.css"/>
    	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i" rel="stylesheet">
 	<style>
-	   	/* Style for the logout button */
 		.logout-btn {
-		    background-color: #dc2626; /* Red color */
-		    color: #fff; /* White text color */
-		    border-radius: 0.375rem; /* Rounded corners */
-		    padding: 0.75rem 1.5rem; /* Padding */
-		    transition: transform 0.3s, box-shadow 0.3s; /* Transition effect for hover */
+		    background-color: #dc2626; 
+		    color: #fff; 
+		    border-radius: 0.375rem;
+		    padding: 0.75rem 1.5rem; 
+		    transition: transform 0.3s, box-shadow 0.3s;
 		}
 
 		.logout-btn:hover {
-		    background-color: #c53030; /* Darker red color on hover */
-		    transform: scale(1.05); /* Scale effect on hover */
-		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+		    background-color: #c53030;
+		    transform: scale(1.05);
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 		}
 		.chatbot-btn {
 			position: fixed;
 			bottom: 75px;
 			right: 20px;
-			background-color: #007bff; /* Blue color */
-			color: #fff; /* White text color */
+			background-color: #007bff; 
+			color: #fff;
 			border: none;
 			border-radius: 50%;
 			padding: 15px;
 			font-size: 16px;
 			cursor: pointer;
-			z-index: 999; /* Ensure it's above other elements */
+			z-index: 999;
 			transition: background-color 0.3s;
 		}
 
 		.chatbot-btn:hover {
-			background-color: #0056b3; /* Darker blue color on hover */
+			background-color: #0056b3;
 		}
 
 		.overlay-text h2{
 			font-family: 'Righteous', 'sans-serif';
 			background: linear-gradient(to right, #FFA732 0%, #D20062 50%, #A7D129 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; /* Safari */
+            -webkit-text-fill-color: transparent;
             background-clip: text;
             text-fill-color: transparent;
 		}
@@ -59,19 +58,14 @@ include("db.php");
    </head>
    <body>
 	
-   	<!-- introduction -->
 	   <nav>
 		<ul>
-			<!-- <li><a href="Customer.php">Insert Customer</a></li> -->
-            <!-- <li><a href="display.php">View Customers</a></li> -->
             <li><a href="insertorders.php">Insert Orders</a></li>
             <li><a href="displayorders.php">View Orders</a></li>
             <li><a href="insertproduct.php">Insert Products</a></li>
             <li><a href="displayproduct.php">View Products</a></li>
 			
-            <li><a href="FrontPage.php" class="logout-btn">Logout</a></li> 
-            <!-- <li><span class="centered-link"><a href="insertsuppliers.php">Insert Suppliers</a></span></li>
-            <li><span class="centered-link"><a href="displaysuppliers.php">Update Suppliers</a></span></li> -->
+            <li><a href="FrontPage.php" class="logout-btn">Logout</a></li>
 		</ul>
 	</nav>
 	
@@ -83,16 +77,13 @@ include("db.php");
 		<div class="overlay-text">
 			<h2>Welcome To Fresh Harbor</h2>
 		</div>
-   		<!-- <h2>Welcome To Grocery Store</h2> -->
    	</div>
 	   <button id="chatbot-btn" class="chatbot-btn" >Chat with us</button>
-   	<!-- footer -->
    	<footer class="footer">
 		<p>&copy; Fresh Harbor 2024. All rights reserved.</p>
    		</footer>
 		   <script>
     document.getElementById('chatbot-btn').addEventListener('click', function() {
-        // Redirect to the "f.index" page
         window.location.href = 'chatbot.html';
     });
 </script>
