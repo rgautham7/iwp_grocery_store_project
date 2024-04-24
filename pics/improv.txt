@@ -1,0 +1,11 @@
+requirement gathering:
+
+1. add stock purchase date
+2. last sold date
+3. inventory turns - stock in months(avl. quantity/monthly sales)
+4. not moved items (categories-slow,dead)
+5. fast selling
+6. expired items
+7. need to move items.(approaching exp date)
+8. fifo
+9. re-order level(for stock) - unique for different products. 5W's 1H

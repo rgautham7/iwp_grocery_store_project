@@ -1,0 +1,87 @@
+/*default styles*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*style for navigation*/
+nav{
+	height: 80px;
+	width: 100%;
+	background-color: #17292a;
+}
+nav ul {
+	list-style: none;
+    float: right;
+    margin-right: 30px;
+    margin-top: 29px;
+}
+nav ul li {
+	float: left;
+	padding-left: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+body{
+	font-family: 'PT Sans', sans-serif
+	
+}
+/*logo*/
+.logo{
+	height: 80px;
+    float: left;
+    margin-left: 30px;
+    color: white;
+    width: 200px;
+    margin-top: 29px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.logo a{
+	text-decoration: none;
+	color: White;
+}
+
+/*introduction section*/
+.introduction{
+	height: 600px;
+	width: 100%;
+	background-color:#79dfda;
+	background-position: 50% 10%;
+	background-size: cover;
+	transition: opacity 0.3s;
+}
+
+/* .introduction:hover {
+	opacity: 0.8;
+  } */
+
+.introduction h2{
+	font-size: 50PX;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding-top: 245px;
+    text-align:justify;
+	font-weight: bold;
+}
+
+/*footer section*/
+.footer{
+	height: 50px;
+	width: 100%;
+	background-color: rgb(28, 37, 63);
+}
+
+.centered-link {
+	display: flex;
+	justify-content: center;
+}
+
+
+  
