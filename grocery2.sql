@@ -20,8 +20,8 @@ CREATE TABLE `clerks` (
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO clerks (id, name, username, password) VALUES (1, 'admin', 'admin@gmail.com', 'abc');
-INSERT INTO clerks (id, name, username, password) VALUES (1, 'user', 'abc@gmail.com', 'abc');
+INSERT INTO clerks (id, name, username, password) VALUES (90423, 'admin', 'admin@gmail.com', 'abc');
+INSERT INTO clerks (id, name, username, password) VALUES (83442, 'user', 'abc@gmail.com', 'abc');
 
 
 CREATE TABLE `customer` (
