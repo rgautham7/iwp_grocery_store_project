@@ -20,12 +20,6 @@ CREATE TABLE `clerks` (
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `clerks` (`id`, `name`, `username`, `password`) VALUES
-(1, 'Gautham', 'gauthamramesh93442@gmail.com', 'password');
-INSERT INTO `clerks` (`id`, `name`, `username`, `password`) VALUES
-(1, 'Rasheed', 'rasheed@gmail.com', 'password');
-INSERT INTO `clerks` (`id`, `name`, `username`, `password`) VALUES
-(1, 'Lakshmanan Kishore', 'lk2004@gmail.com', 'password');
 INSERT INTO clerks (id, name, username, password) VALUES (1, 'admin', 'admin@gmail.com', 'abc');
 INSERT INTO clerks (id, name, username, password) VALUES (1, 'user', 'abc@gmail.com', 'abc');
 
